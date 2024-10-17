@@ -24,68 +24,74 @@
   </head>
   <body>
 
-    <!-- Cellphone -->
-    <div class="cellphone">
+    <section class="container flex">
+        <!-- Cellphone -->
+      <div class="cellphone">
 
-      <div class="phone-header flex">
-        <div class="notch"></div>
-        <div class="header-options flex">
-          <div class="contact flex">
-            <i class="fa-solid fa-chevron-right arrow-left"></i>
-            <img src="images/avatar.jpg" alt="person" class="avatar" />
-            <div class="contact-info flex">
-              <h4 class="contact-name">Samuel Green</h4>
-              <p class="available">Available to Walk</p>
+        <div class="phone-header flex">
+          <div class="notch"></div>
+          <div class="header-options flex">
+            <div class="contact flex">
+              <i class="fa-solid fa-chevron-right arrow-left"></i>
+              <img src="images/avatar.jpg" alt="person" class="avatar" />
+              <div class="contact-info flex">
+                <h4 class="contact-name">Samuel Green</h4>
+                <p class="available">Available to Walk</p>
+              </div>
             </div>
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
           </div>
-          <i class="fa-solid fa-ellipsis-vertical dots"></i>
         </div>
+
+        <div class="conversation">
+          <div class="receiver flex">
+            <p class="receiver-msg msg">That sounds great. I’d be happy with that.</p>
+            <p class="receiver-msg msg">Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="transmitter flex">
+            <div class="dog-imgs flex">
+              <img src="images/dog-image-1.jpg" alt="dog" class="dog-img" />
+              <img src="images/dog-image-2.jpg" alt="dog" class="dog-img" />
+              <img src="images/dog-image-3.jpg" alt="dog" class="dog-img" />
+            </div>
+            <p class="transmitter-msg msg">Here are a few pictures. She’s a happy girl!</p>
+            <p class="transmitter-msg msg">Can you make it?</p>
+          </div>
+          <div class="receiver flex">
+            <p class="receiver-msg msg">She looks so happy! The time we discussed works. How long shall I take her
+              out for?</p>
+              <div class="walk-option flex">
+                <div style="gap: .8rem" class="flex">
+                  <i class="fa-regular fa-circle"></i>
+                  <h5 class="walk-time">30 minute walk</h5>
+                </div>
+                <h3 class="price">$29</h3>
+              </div>
+              <div class="walk-option flex">
+                <div style="gap: .8rem" class="flex">
+                  <i class="fa-regular fa-circle"></i>
+                  <h5 class="walk-time">1 hour walk</h5>
+                </div>
+                <h3 class="price">$49</h3>
+              </div>
+          </div>
+          <div class="msg-input flex">
+            <h5>Type a message…</h5>
+            <i class="fa-solid fa-chevron-right submit-btn"></i>
+          </div>
+        </div>
+        
       </div>
 
-      <div class="conversation">
-        <div class="receiver flex">
-          <p class="receiver-msg msg">That sounds great. I’d be happy with that.</p>
-          <p class="receiver-msg msg">Could you send over some pictures of your dog, please?</p>
-        </div>
-        <div class="transmitter flex">
-          <div class="dog-imgs flex">
-            <img src="images/dog-image-1.jpg" alt="dog" class="dog-img" />
-            <img src="images/dog-image-2.jpg" alt="dog" class="dog-img" />
-            <img src="images/dog-image-3.jpg" alt="dog" class="dog-img" />
-          </div>
-          <p class="transmitter-msg msg">Here are a few pictures. She’s a happy girl!</p>
-          <p class="transmitter-msg msg">Can you make it?</p>
-        </div>
-        <div class="receiver flex">
-          <p class="receiver-msg msg">She looks so happy! The time we discussed works. How long shall I take her
-            out for?</p>
-            <div class="walk-option flex">
-              <div style="gap: .8rem" class="flex">
-                <i class="fa-regular fa-circle"></i>
-                <h5 class="walk-time">30 minute walk</h5>
-              </div>
-              <h3 class="price">$29</h3>
-            </div>
-            <div class="walk-option flex">
-              <div style="gap: .8rem" class="flex">
-                <i class="fa-regular fa-circle"></i>
-                <h5 class="walk-time">1 hour walk</h5>
-              </div>
-              <h3 class="price">$49</h3>
-            </div>
-        </div>
-        <div class="msg-input flex">
-          <h5>Type a message…</h5>
-          <i class="fa-solid fa-chevron-right submit-btn"></i>
-        </div>
+      <div class="info">
+        <h1 class="title">Simple booking</h1>
+        <p class="description">Stay in touch with our dog walkers through the chat interface. This makes it
+          easy to discuss arrangements and make bookings. Once the walk has been
+          completed you can rate your walker and book again all through the chat.</p>
       </div>
+    </section>
       
-    </div>
-
-  Simple booking
-    Stay in touch with our dog walkers through the chat interface. This makes it
-    easy to discuss arrangements and make bookings. Once the walk has been
-    completed you can rate your walker and book again all through the chat.
+      
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

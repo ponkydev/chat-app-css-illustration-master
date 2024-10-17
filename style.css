@@ -29,6 +29,9 @@
 body {
     min-height: 100vh;
     background-color: var(--light-grayish-violet);
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
 }
 
     /* Utility Classes */
@@ -39,13 +42,44 @@ body {
     align-items: center;
 }
 
+    /* Container */
+.container {
+    gap: min(10rem, 20vh);
+    justify-content: center;
+}
+
+.container::before {
+    content: '';
+    height: 90vh;
+    width: 30rem;
+    border-radius: 0 0 15rem 15rem;
+    background: linear-gradient(0deg, var(--light-violet), var(--light-magenta));
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    z-index: -10;
+}
+
+.container::after {
+    content: '';
+    height: 90vh;
+    width: 30rem;
+    border-radius: 15rem 15rem 0 0;
+    background: #f0ebf4;
+    position: absolute;
+    bottom: 0;
+    right: -7.5em;
+    z-index: -10;
+}
+
     /* Cellphone */
 .cellphone {
-    width: 23rem;
+    min-width: 23rem;
     height: 43rem;
     border-radius: 2.5rem;
     padding: 1rem;
     background-color: #fff;
+    display: inline-block;
 }
 
     /* Phone Header */
@@ -208,4 +242,21 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+    /* Information */
+.info {
+    max-width: 28rem;
+}
+
+.title {
+    font-size: 2.3rem;
+    color: var(--very-dark-desaturated-violet);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.description {
+    line-height: 1.7rem;
+    color: var(--dark-grayish-violet);
 }
